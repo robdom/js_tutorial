@@ -1,0 +1,7 @@
+let firstName = "Robert";
+let lastName = "Domingo";
+let city = "Elmhurst";
+let state = "NY";
+let username = firstName.toLowerCase();
+let soliloquy = "To be, or not to be, that is the question:"
+let dontcare = "hoNeY BaDGer"
