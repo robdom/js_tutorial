@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "robdom-palindrome": "^0.2.0"
+    "robdom-palindrome": "^0.2.0",
+    "urllib": "^2.37.2"
   }
 }
