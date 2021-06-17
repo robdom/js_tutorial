@@ -6,10 +6,7 @@ let Phrase = require("robdom-palindrome");
 let text = fs.readFileSync("phrases.txt", "utf-8");
 text.split("\n").forEach(function(line) {
   let phrase = new Phrase(line);
-  fs.writeFile('palindromes.txt', line, err => {
-    if (err) {
-      console.log(err)
-      return
-    }
-  });
+  if (phrase.palindrome()) {
+    console.log("palindrome detected:", line);
+  }
 });
