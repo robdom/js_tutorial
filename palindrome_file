@@ -7,7 +7,7 @@ let text = fs.readFileSync("phrases.txt", "utf-8");
 text.split("\n").forEach(function(line) {
   let phrase = new Phrase(line);
   if (phrase.palindrome()) {
-    fs.writeFile('palindromes.txt', line, {flag: 'a+'}, function (err) {
+    fs.writeFileSync('palindromes.txt', line + "\n", {flag: 'a+'}, function (err) {
       if (err) return console.log(err);
     });
     console.log("This line was written to palindromes.txt: ", line)
