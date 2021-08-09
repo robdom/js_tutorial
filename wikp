@@ -5,6 +5,10 @@
 let urllib = require("urllib");
 let url = process.argv[2];
 
+if (!url) {
+  console.log("Please include a URL.");
+  process.exit(1);
+}
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
